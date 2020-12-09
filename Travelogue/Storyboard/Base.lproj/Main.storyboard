@@ -238,13 +238,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R79-dO-iud">
-                                <rect key="frame" x="20" y="111" width="71" height="21"/>
+                                <rect key="frame" x="20" y="110.5" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZUJ-gi-e3l">
-                                <rect key="frame" x="99" y="104" width="295" height="35"/>
+                                <rect key="frame" x="99" y="104" width="295" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -252,13 +252,14 @@
                         <viewLayoutGuide key="safeArea" id="REd-Dw-q84"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="REd-Dw-q84" firstAttribute="trailing" secondItem="ZUJ-gi-e3l" secondAttribute="trailing" constant="20" id="20q-95-CDz"/>
-                            <constraint firstItem="REd-Dw-q84" firstAttribute="bottom" secondItem="R79-dO-iud" secondAttribute="bottom" constant="730" id="BzZ-zJ-IyK"/>
-                            <constraint firstItem="ZUJ-gi-e3l" firstAttribute="centerY" secondItem="R79-dO-iud" secondAttribute="centerY" id="fzO-FH-Tf5"/>
-                            <constraint firstItem="R79-dO-iud" firstAttribute="top" secondItem="REd-Dw-q84" secondAttribute="top" constant="23" id="gFG-Gi-xNb"/>
-                            <constraint firstItem="R79-dO-iud" firstAttribute="leading" secondItem="REd-Dw-q84" secondAttribute="leading" constant="20" id="oQM-GI-oj2"/>
-                            <constraint firstItem="ZUJ-gi-e3l" firstAttribute="top" secondItem="REd-Dw-q84" secondAttribute="top" constant="16" id="pV1-uV-3MB"/>
-                            <constraint firstItem="ZUJ-gi-e3l" firstAttribute="leading" secondItem="R79-dO-iud" secondAttribute="trailing" constant="8" symbolic="YES" id="xhY-TQ-c59"/>
+                            <constraint firstItem="REd-Dw-q84" firstAttribute="bottom" secondItem="R79-dO-iud" secondAttribute="bottom" constant="730.5" id="AAm-AC-9jU"/>
+                            <constraint firstItem="R79-dO-iud" firstAttribute="top" secondItem="REd-Dw-q84" secondAttribute="top" constant="22.5" id="BmZ-Df-oak"/>
+                            <constraint firstItem="REd-Dw-q84" firstAttribute="bottom" secondItem="ZUJ-gi-e3l" secondAttribute="bottom" constant="724" id="RvJ-Hp-Jz6"/>
+                            <constraint firstItem="R79-dO-iud" firstAttribute="leading" secondItem="REd-Dw-q84" secondAttribute="leading" constant="20" id="W4Z-kn-Zgf"/>
+                            <constraint firstItem="ZUJ-gi-e3l" firstAttribute="top" secondItem="REd-Dw-q84" secondAttribute="top" constant="16" id="hfv-lk-Xy3"/>
+                            <constraint firstItem="REd-Dw-q84" firstAttribute="trailing" secondItem="ZUJ-gi-e3l" secondAttribute="trailing" constant="20" id="mjc-8b-5T4"/>
+                            <constraint firstItem="ZUJ-gi-e3l" firstAttribute="leading" secondItem="R79-dO-iud" secondAttribute="trailing" constant="8" symbolic="YES" id="yDC-3r-iTX"/>
+                            <constraint firstItem="ZUJ-gi-e3l" firstAttribute="centerY" secondItem="R79-dO-iud" secondAttribute="centerY" id="yXQ-xK-oYp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Trip" id="u8x-Ic-SqG">

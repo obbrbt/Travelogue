@@ -92,6 +92,9 @@ class NewEntryViewController: UIViewController, UIImagePickerControllerDelegate,
         
         let body = bodyTextView.text
         
+        print("title is \(title)")
+        print("body is \(body)")
+        
         if entry == nil
         {
             entry = Entry(title: title, body: body, image: photoView.image)

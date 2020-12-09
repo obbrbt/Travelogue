@@ -48,6 +48,10 @@ class EntriesViewController: UIViewController, UITableViewDelegate, UITableViewD
         do
         {
             entries = try managedContext.fetch(fetchRequest)
+            for entry in entries
+            {
+                print(entry.title)
+            }
         } catch
         {
             alertNotifyUser(message: "Fetch for entries could not be performed.")
