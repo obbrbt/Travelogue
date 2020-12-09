@@ -17,6 +17,10 @@
 		947A86ED25811B4F0050B1EA /* NewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A86EC25811B4F0050B1EA /* NewTripViewController.swift */; };
 		947A86F025811B560050B1EA /* EntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A86EF25811B560050B1EA /* EntriesViewController.swift */; };
 		947A86F325811B5F0050B1EA /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A86F225811B5F0050B1EA /* NewEntryViewController.swift */; };
+		947A86F9258120910050B1EA /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A86F5258120910050B1EA /* Trip+CoreDataClass.swift */; };
+		947A86FA258120910050B1EA /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A86F6258120910050B1EA /* Trip+CoreDataProperties.swift */; };
+		947A86FB258120910050B1EA /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A86F7258120910050B1EA /* Entry+CoreDataClass.swift */; };
+		947A86FC258120910050B1EA /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A86F8258120910050B1EA /* Entry+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		947A86EC25811B4F0050B1EA /* NewTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripViewController.swift; sourceTree = "<group>"; };
 		947A86EF25811B560050B1EA /* EntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesViewController.swift; sourceTree = "<group>"; };
 		947A86F225811B5F0050B1EA /* NewEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
+		947A86F5258120910050B1EA /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		947A86F6258120910050B1EA /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		947A86F7258120910050B1EA /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		947A86F8258120910050B1EA /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 		947A86E625811B1C0050B1EA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				947A86F5258120910050B1EA /* Trip+CoreDataClass.swift */,
+				947A86F6258120910050B1EA /* Trip+CoreDataProperties.swift */,
+				947A86F7258120910050B1EA /* Entry+CoreDataClass.swift */,
+				947A86F8258120910050B1EA /* Entry+CoreDataProperties.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -181,12 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947A86FA258120910050B1EA /* Trip+CoreDataProperties.swift in Sources */,
 				947A86D625811A780050B1EA /* Travelogue.xcdatamodeld in Sources */,
 				947A86E925811B450050B1EA /* TripsViewController.swift in Sources */,
 				947A86ED25811B4F0050B1EA /* NewTripViewController.swift in Sources */,
+				947A86FC258120910050B1EA /* Entry+CoreDataProperties.swift in Sources */,
 				947A86CC25811A780050B1EA /* AppDelegate.swift in Sources */,
 				947A86CE25811A780050B1EA /* SceneDelegate.swift in Sources */,
 				947A86F325811B5F0050B1EA /* NewEntryViewController.swift in Sources */,
+				947A86F9258120910050B1EA /* Trip+CoreDataClass.swift in Sources */,
+				947A86FB258120910050B1EA /* Entry+CoreDataClass.swift in Sources */,
 				947A86F025811B560050B1EA /* EntriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
