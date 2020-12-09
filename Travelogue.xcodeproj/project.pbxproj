@@ -56,15 +56,47 @@
 		947A86CA25811A780050B1EA /* Travelogue */ = {
 			isa = PBXGroup;
 			children = (
+				947A86E725811B210050B1EA /* Table Views */,
+				947A86E625811B1C0050B1EA /* Helpers */,
+				947A86E525811B170050B1EA /* Storyboard */,
+				947A86E425811B130050B1EA /* Views */,
 				947A86CB25811A780050B1EA /* AppDelegate.swift */,
 				947A86CD25811A780050B1EA /* SceneDelegate.swift */,
-				947A86D125811A780050B1EA /* Main.storyboard */,
 				947A86D725811A7A0050B1EA /* Assets.xcassets */,
-				947A86D925811A7A0050B1EA /* LaunchScreen.storyboard */,
 				947A86DC25811A7A0050B1EA /* Info.plist */,
 				947A86D425811A780050B1EA /* Travelogue.xcdatamodeld */,
 			);
 			path = Travelogue;
+			sourceTree = "<group>";
+		};
+		947A86E425811B130050B1EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		947A86E525811B170050B1EA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				947A86D925811A7A0050B1EA /* LaunchScreen.storyboard */,
+				947A86D125811A780050B1EA /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		947A86E625811B1C0050B1EA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		947A86E725811B210050B1EA /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Table Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
