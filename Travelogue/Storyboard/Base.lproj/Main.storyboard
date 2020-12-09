@@ -151,6 +151,9 @@
                                 <rect key="frame" x="110" y="106.5" width="284" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameChanged:" destination="ZYi-xj-Imv" eventType="editingDidEnd" id="8mg-Tm-KLg"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eQE-Je-W6D">
                                 <rect key="frame" x="20" y="148" width="374" height="305"/>
@@ -163,8 +166,16 @@
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="camera" id="eZd-mx-nCS"/>
-                                    <barButtonItem systemItem="organize" id="TcH-6o-LYG"/>
+                                    <barButtonItem systemItem="camera" id="eZd-mx-nCS">
+                                        <connections>
+                                            <action selector="cameraSelected:" destination="ZYi-xj-Imv" id="o2j-NU-yaI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="organize" id="TcH-6o-LYG">
+                                        <connections>
+                                            <action selector="folderSelected:" destination="ZYi-xj-Imv" id="qq2-wi-6ry"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bja-E3-1ry">
@@ -191,8 +202,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Hta-Oc-ECe">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="zeB-fL-8nn"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="zeB-fL-8nn">
+                            <connections>
+                                <action selector="saveEntry:" destination="ZYi-xj-Imv" id="2Hm-mR-PEa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextView" destination="eQE-Je-W6D" id="bc2-kQ-oSw"/>
+                        <outlet property="photoView" destination="bja-E3-1ry" id="aNK-tp-Ujg"/>
+                        <outlet property="titleTextField" destination="8fR-0b-e5s" id="3Hd-Ip-A8a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f87-7u-KEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
