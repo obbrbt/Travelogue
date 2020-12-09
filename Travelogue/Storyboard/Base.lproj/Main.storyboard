@@ -42,6 +42,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bf9-h4-rIv"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fhe-jh-Za3"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -62,7 +66,7 @@
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="24.776785714285712"/>
         </scene>
-        <!--Entries View Controller-->
+        <!--Entries-->
         <scene sceneID="aCN-uF-zeP">
             <objects>
                 <viewController id="8V1-4P-e1m" customClass="EntriesViewController" customModule="Travelogue" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,7 +79,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="entryCell" textLabel="Z41-st-rtG" detailTextLabel="HgR-bb-Lsk" style="IBUITableViewCellStyleSubtitle" id="EMU-md-3ea">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="entryCell" textLabel="Z41-st-rtG" detailTextLabel="HgR-bb-Lsk" style="IBUITableViewCellStyleSubtitle" id="EMU-md-3ea" customClass="EntriesTableViewCell" customModule="Travelogue" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="425" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EMU-md-3ea" id="7zY-Xb-wgX">
@@ -99,22 +103,31 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="dateTextLabel" destination="HgR-bb-Lsk" id="i06-gK-nN5"/>
+                                            <outlet property="titleTextLabel" destination="Z41-st-rtG" id="x9Y-pa-nFi"/>
                                             <segue destination="ZYi-xj-Imv" kind="show" identifier="existingEntry" id="vRs-YC-QtP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8V1-4P-e1m" id="MFh-QO-801"/>
+                                    <outlet property="delegate" destination="8V1-4P-e1m" id="TZ1-y4-LRm"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NNR-X6-MU1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Lhf-it-CKU">
+                    <navigationItem key="navigationItem" title="Entries" id="Lhf-it-CKU">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hEl-i4-e7Y">
                             <connections>
                                 <segue destination="ZYi-xj-Imv" kind="show" identifier="newEntry" id="ZbB-cf-4aa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="entriesTableView" destination="d1u-jR-xbG" id="yIJ-Ue-hGK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9h-bb-n4K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
