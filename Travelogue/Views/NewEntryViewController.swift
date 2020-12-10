@@ -30,7 +30,7 @@ class NewEntryViewController: UIViewController, UIImagePickerControllerDelegate,
             titleTextField.text = title
             bodyTextView.text = entry.body
             title = entryTitle
-            photoView.image = image
+            photoView.image = entry.photo
         }
         
         imagePickerController.delegate = self
@@ -91,9 +91,6 @@ class NewEntryViewController: UIViewController, UIImagePickerControllerDelegate,
         }
         
         let body = bodyTextView.text
-        
-        print("title is \(title)")
-        print("body is \(body)")
         
         if entry == nil
         {

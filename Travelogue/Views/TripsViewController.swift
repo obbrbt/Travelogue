@@ -38,10 +38,6 @@ class TripsViewController: UIViewController, UITableViewDataSource, UITableViewD
         do
         {
             trips = try managedContext.fetch(fetchRequest)
-            for trip in trips
-            {
-                print(trip.entries)
-            }
             tripsTableView.reloadData()
         } catch
         {

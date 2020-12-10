@@ -14,7 +14,7 @@ public class Entry: NSManagedObject {
     
     func convertToData(image: UIImage?) -> Data?
     {
-        return image?.pngData() as Data?
+        return processImage(image: image!).pngData() as Data?
     }
     
     var photo: UIImage?
@@ -58,5 +58,23 @@ public class Entry: NSManagedObject {
         self.body = body
         self.date = Date(timeIntervalSinceNow: 0)
         self.rawImage = convertToData(image: image)
+    }
+    
+    func processImage(image: UIImage) -> UIImage {
+        if (image.imageOrientation == .up) {
+            return image
+        }
+        
+        UIGraphicsBeginImageContext(image.size)
+        
+        image.draw(in: CGRect(origin: CGPoint.zero, size: image.size), blendMode: .copy, alpha: 1.0)
+        let copy = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        guard let unwrappedCopy = copy else {
+            return image
+        }
+        return unwrappedCopy
     }
 }
